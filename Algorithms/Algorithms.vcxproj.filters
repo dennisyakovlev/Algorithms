@@ -20,13 +20,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\Sorting Algorithms\Insertion_Sort.h">
+    <ClInclude Include="Tester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="Headers\sorting.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\Search Algorithms\Linear Search.h">
+    <ClInclude Include="Headers\search.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

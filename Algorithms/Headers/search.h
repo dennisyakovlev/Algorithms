@@ -1,5 +1,7 @@
 #pragma once
+#if defined DEBUG
 #include <iterator>
+#endif
 
 namespace algorithms {
 
@@ -27,7 +29,25 @@ namespace algorithms {
 			return begin;
 
 		}
+	
+		//Requires forward iterator at the minimum
+		template<typename Iter>
+		Iter Find_Min(Iter begin, Iter end) {
 
+			Iter min = begin;
+
+			if (begin != end) {
+
+				for (; begin != end; begin++) {
+
+					if ((*begin) < (*min))
+						min = begin;
+
+				}
+			}
+
+			return min;
+
+		}
 	}
-
 }
