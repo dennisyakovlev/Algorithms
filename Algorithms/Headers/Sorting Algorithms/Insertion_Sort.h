@@ -7,7 +7,7 @@ namespace algorithms {
 
 		//Requires bidirectional iterator at the minimum
 		template<typename Iter>
-		void Insertion_Sort(Iter begin, Iter end) {
+		void Insertion_Sort(Iter begin, const Iter end) {
 
 			const Iter beginning = begin;
 			begin++;
