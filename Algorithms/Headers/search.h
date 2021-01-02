@@ -49,5 +49,25 @@ namespace algorithms {
 			return min;
 
 		}
+
+		//Requires forward iterator at the minimum
+		template<typename Iter>
+		Iter Find_Max(Iter begin, Iter end) {
+
+			Iter min = begin;
+
+			if (begin != end) {
+
+				for (; begin != end; begin++) {
+
+					if ((*begin) > (*min))
+						min = begin;
+
+				}
+			}
+
+			return min;
+
+		}
 	}
 }
